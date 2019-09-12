@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-header-logo">
+                <img src="img/index-logo.svg" width="" height="" alt="Логотип Седона">
+            </a>
+                <ul class="cite-navigation">
+                    <li><a href="info.html">Информация</a></li>
+                    <li><a href="media.html">Фото и видео</a></li>
+                    <li><a href="map.html">Карта штата</a></li>
+                    <li><a href="hotels.html">Гостиницы</a></li>
+                </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="choise">
+            <ul>
+                <li>
+                    <h1>Инфраструкутра</h1>
+                    <p>Бассейн
+                    <input type="checkbox" checked>
+                    </p>
+                    <p>Парковка
+                    <input type="checkbox">
+                    </p>
+                    <p>Wi-fi
+                    <input type="checkbox">
+                    </p>
+                </li>
+                <li>
+                    <h1>Тип жилья</h1>
+                    <p>Гостиница
+                    <input type="checkbox" checked>
+                    </p>
+                    <p>Мотель
+                    <input type="checkbox" checked>
+                    </p>
+                    <p>Апартаменты
+                    <input type="checkbox" checked>
+                    </p>
+                </li>
+                <li class="value">
+                    <h1>Стоимость в сутки (Р)</h1>
+                    <p>ОТ 0</p>
+                    <p>До 3000</p>
+                    <input type="range" min="0" max="3000">
+                    <!--
+                        Как блять сделать 2 ползунка
+                    -->
+                </li>
+            </ul>
+        </section>
+        <section class="results">
+            <ul class="hotels-results">
+                <li>
+                    <h2>Найдено:3</h2>
+                    <p>Сортировка</p>
+                    <a href="#">По цене</a>
+                    <a href="#">По типу</a>
+                    <a href="#">ПО рейтингу</a>
+                    <!--
+                        Две кнопки вниз\вверх
+                    -->
+                </li>
+                <li class="hotels">
+                    <img src="#"> <!--Добавить размеры-->
+                    <h3>Amara resort & spa</h3>
+                    <p>Гостиница</p>
+                    <p>от 4000 Р.</p>
+                    <a class="button" href="#">Подробнее</a>
+                    <button class="button" value="Забронировать">Забронировать</button>
+                    <p class="rating">Рейтинг:8.5</p>     
+                    <!--ДОбавить звезды-->               
+                </li>
+                <li class="hotels">
+                    <img src="#"> <!--Добавить размеры-->
+                    <h3>Desert Quail Inn</h3>
+                    <p>Мотель</p>
+                    <p>от 3000 Р.</p>
+                    <a class="button" href="#">Подробнее</a>
+                    <button class="button" value="Забронировать">Забронировать</button>
+                    <p class="rating">Рейтинг:8.9</p> 
+                    <!--ДОбавить звезды-->                   
+                </li>
+                <li class="hotels">
+                    <img src="#"> <!--Добавить размеры-->
+                    <h3>Vilas at poco diablo</h3>
+                    <p>Аппартаменты</p>
+                    <p>от 2000 Р.</p>
+                    <a class="button" href="#">Подробнее</a>
+                    <button class="button" value="Забронировать">Забронировать</button>
+                    <p class="rating">Рейтинг:9.2</p>   
+                    <!--ДОбавить звезды-->                 
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <p class="hashtag">#VISITSEDONA</p>
+        <div>
+            <ul class="social">
+                <li><a class="social-button" href="#">Twitter</a></li>
+                <li><a class="social-button" href="#">Facebook</a></li>
+                <li><a class="social-button" href="#">Youtube</a></li>
+            </ul>
+        </div>
+        <div>
+            <p>Website by</p>
+            <a class="button" href="https://htlmacadamy.ru">HTML Academy</a>
+        </div>
+    </footer>
+</body>
+</html>
