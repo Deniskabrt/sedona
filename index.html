@@ -1,104 +1,116 @@
-<DOCKTYPE html>
+<!DOCTYPE html>
     <html>
         <head>
-                <meta charset="utf-8">
-                <title>City of Sedona</title>
+            <meta charset="utf-8">
+            <title>City of Sedona</title>
         </head>
         <body>
-            <header class="main-header">
-                <nav class="main-navigation">
-                        <a class="main-header-logo">
-                            <img src="img/index-logo.svg" width="" height="" alt="Логотип Седона">
-                        </a>
-                            <ul class="cite-navigation">
-                                <li><a href="info.html">Информация</a></li>
-                                <li><a href="media.html">Фото и видео</a></li>
-                                <li><a href="map.html">Карта штата</a></li>
-                                <li><a href="hotels.html">Гостиницы</a></li>
-                            </ul>
+            <header class="header">
+                <nav class="header-navigation">
+                    <a class="header-logo">
+                        <img src="img/index-logo.svg" width="" height="" alt="Логотип Седона">
+                    </a>
+                    <ul class="header-menu">
+                        <li><a class="header-menu-link" href="#">Информация</a></li>
+                        <li><a class="header-menu-link" href="#">Фото и видео</a></li>
+                        <li><a class="header-menu-link" href="#">Карта штата</a></li>
+                        <li><a class="header-menu-link" href="hotels.html">Гостиницы</a></li>
+                    </ul>
                 </nav>
             </header>
-            <main class="conteiner">
-                <h1>Седона - небольшой городок в аризоне звслуживающий большего</h1>
-                <p>Рассмотрим 5 причин по которым седона круче, чем гранд каньон</p>
-                <div class="city">
-                    <h3>Настоящий городок</h3>
-                    <p>№1</p>
-                    <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
-                    <img src="#">
+            <main class="container">
+                <div class="jumbotron">
+                    <h1 class="jumbotron-heading"><span>Welcome</span> <span>to he gorgeous</span> <span>Sedona</span></h1>
+                    <cite class="jumbotron-caption">Because the Grand Canyon sucks!</cite>
                 </div>
-                <section class="features">
-                    <ul class="features-list">
-                        <li class="features-home">
-                            <img src="#">
-                            <h2>Жилье</h2>
-                            <b>Рекомендуем пожить в настоящем мотеле,все как в кино</b>
-                        </li>
-                        <li class="features-food">
-                            <img src="#">
-                            <h2>Еда</h2>
-                            <b>Всегда заказывайте фирменный бургер,вы не разочаруетесь</b>
-                        </li>
-                        <li class="features-souvenirs">
-                            <img src="#">
-                            <h2>Сувениры</h2>
-                            <b>Не только китайского, но и местного производства</b>
-                        </li>
-                    </ul>
-                </section>
-                <section class="bridge">
-                    <img src="#">
-                    <h3>Там есть мост дьявола</h3>
-                    <p>№2</p>
-                    <p>Да, по нему можно пройтись! Если конечно вы осмелитесь</p>
-                </section>
-                <section class="bottom-info">
-                    <ul class="features-list">
-                        <li class="feature-area">
-                            <h2>Невольшая площадь</h2>
-                            <p>№3</p>
-                            <p>Все достопримечательности находятся очень близко</p>
-                        </li>
-                        <li class="feature-road">
-                            <h2>Красивая дорога</h2>
-                            <b>№4</b>
-                            <b>Ехать в седону из Лас-Вегаса совсем не скучно</b>
-                        </li>
-                        <li class="feature-people">
-                            <h2>Мало туристов</h2>
-                            <b>№5</b>
-                            <b>Большинство едет в гранд каньон и толпится там</b>
-                        </li>
-                    </ul>
-                </section>
-                <section class="checkin">
-                    <h3>Заинтересовались?</h3>
-                    <p class="checkin-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-                    <h3>поиск гостиницы в седоне</h3>
-                    <!--
-                    <p>Дата заезда
-                        <input type="date" name="calendar" value="2017-04-17">   
-                    </p>
-                    <p>Дата выезда
-                        <input type="date" name="calendar" value="2017-07-04"
-                    </p>
-                    
-                    --> 
-                    <a class="button" href="#" value="Найти">Найти</a>          
+                <div class="main-info">
+                    <p class="main-info-heading">Седона- небольшой городок в аризоне,заслуживающий большего</p>
+                    <p class="main-info-caption">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон</p>
+                </div>
+                <ul class="features">
+                    <li>
+                        <div class="feature-display" style="background-image: url('some-image.jpg');">
+                            <div class="feature feature-dark">
+                                <h3 class="feature-heading">Настоящий городок</h3>
+                                <p class="feauture-number">№1</p>
+                                <p class="feature-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
+                            </div>
+                        </div>
+                        <ul class="more-pros">
+                            <li class="feature feature-light feature-icon feature-icon-home">
+                                <h4 class="feature-heading">Жилье</h4>
+                                <p class="feature-description">Рекомендуем пожить в настоящем мотеле мотеле, все как в кино!</p>
+                            </li>
+                            <li class="feature feature-light feature-icon feature-icon-food">
+                                <h4 class="feature-heading">Еда</h4>
+                                <p class="feature-description"> Всегда заказывайте фирменный бургер. Вы не разочаруетесь</p>
+                            </li>
+                            <li class="feature feature-light feature-icon feature-icon-gifts">
+                                <h4 class="feature-heading">Сувениры</h4>
+                                <p class="feature-description">Не только китайского, но и местного производства!</p>
+                        </ul>
+                    </li>
+                    <li class="feature-display" style="background-image: url('some-image.jpg');">
+                        <div class="feature feature-dark">
+                            <h3 class="feature-heading">Там есть мост дьявола</h3>
+                            <p class="feauture-number">№2</p>
+                            <p class="feature-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                        </div>
+                    </li>
+                    <li class="feature">
+                        <h3 class="feature-heading">Небольшая площадь</h3>
+                        <p class="feauture-number">№3</p>
+                        <p class="feature-description">Все достопримечательности находятся очень близко</p>
+                    </li>
+                    <li class="feature">
+                        <h3 class="feature-heading">Красивая дорога</h3>
+                        <p class="feauture-number">№4</p>
+                        <p class="feature-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                    </li>
+                    <li class="feature">
+                        <h3 class="feature-heading">Мало туристов</h3>
+                        <p class="feauture-number">№5</p>
+                        <p class="feature-description">Большинство едет в Гранд Каньон и толпится там</p>
+                    </li>
+                </ul>
+                <section class="section-booking">
+                    <h2 class="section-booking-heading">Заинтересовались?</h2>
+                    <p class="section-booking-description">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                    <form action="" class="form section-booking-form">
+                        <h3 class="form-heading">Поиск гостиницы в Седоне</h3>
+                        <div class="form-content">
+                            <div class="form-input-group">
+                                <lable class="form-lable" for="booking-arrival-date">Дата заезда:</lable>
+                                <input type="date" id="booking-arrival-date" class="form-input" value="2017-04-24">
+                            </div>
+                            <div class="form-input-group">
+                                <lable class="form-lable" for="booking-departure-date">Дата выезда:</lable>
+                                <input type="date" id="booking-departure-date" class="form-input" value="2017-07-04">
+                            </div>
+                            <div class="form-input-group-inline">
+                                <lable class="form-lable" for="booking-adults">Взрослые:</lable>
+                                <input type="number" class="form-input" id="booking-adults" value="2">
+                            </div>
+                            <div class="form-input-group-inline">
+                                <lable class="form-lable" for="booking-children">Дети:</lable>
+                                <input type="number" class="form-input" id="booking-children" value="0">
+                            </div>
+
+                            <button type="submit" class="form-submit section-booking-form-submit">Найти</button>
+                        </div>
+                    </form>
                 </section>
             </main>
-            <footer class="main-footer">
-                <p class="hashtag">#VISITSEDONA</p>
-                <div>
-                    <ul class="social">
-                        <li><a class="social-button" href="#">Twitter</a></li>
-                        <li><a class="social-button" href="#">Facebook</a></li>
-                        <li><a class="social-button" href="#">Youtube</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <p>Website by</p>
-                    <a class="button" href="https://htlmacadamy.ru">HTML Academy</a>
+            <footer class="footer">
+                <p class="footer-hashtag hashtag">#VISITSEDONA</p>
+                <ul class="footer-socials">
+                    <li><a class="button social social-tw" href="#">Twitter</a></li>
+                    <li><a class="button social social-fb" href="#">Facebook</a></li>
+                    <li><a class="button social social-ytb" href="#">Youtube</a></li>
+                </ul>
+                <div class="footer-credentials credentials">
+                    <p class="credentials-caption">Website by</p>
+                    <a class="credentials-link" href="https://htlmacadamy.ru">HTML Academy</a>
                 </div>
             </footer>
         </body>
