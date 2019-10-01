@@ -1,0 +1,131 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans" , Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.85;
+    font-weight: normal;
+    color: #000000;
+    text-align: center;
+
+
+    background-color: #ffffff;
+}
+
+.header-menu{
+    list-style: none;
+}
+
+.header-menu a{
+    color: #000000;
+    text-decoration: none;
+}
+
+
+.jumbotron-heading>span:nth-child(1){
+
+}
+
+.jumbotron-heading>span:nth-child(2){
+
+}
+
+.jumbotron-heading>span:nth-child(3){
+
+}
+
+.jumbotron-caption{
+
+}
+
+.main-info-heading{
+    font-size: 21px;
+    font-weight: 26px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.main-info-caption{
+    font-size: 14px;
+    font-weight: 26px;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.feature{
+    font-size: 14px;
+    font-weight: 26px;
+    text-transform: uppercase;
+
+}
+
+.feature-display{
+
+
+}
+
+.feature-dark{
+    font-size: 14px;
+    font-weight: 26px;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    background-color: aqua;
+}
+
+.feature-heading h3{
+    
+}
+
+.feature-number{
+    color: #333333;
+
+}
+   
+
+.feature-description{
+
+}
+
+.more-pros{
+    font-size: 14px;
+    font-weight: 26px;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.feature-icon{
+
+}
+
+.feature-icon-home{
+    image: url("img/home.jpg")
+}
+
+.feature-heading h4{
+    font-size: 21px;
+    color: #000000;
+
+}
+
+.feature-description{
+    color: #333333
+}
+
+.feature-icon-food{
+    image: url("img/food.jpg")
+}
+
+.feature-icon-gifts{
+    image: url("img/gifts.jpg")
+
+}
+
+.feature{
+    background-color: #c8c6c3;
+}
+
+.section-booking{
+    
+}
