@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Hotels</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/outline.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="hotels.css" type="text/css">
 </head>
 <body>
     <header class="header">
-        <a class="header-logo">
-            <img src="img/index-logo.svg" width="" height="" alt="Логотип Седона">
-        </a>
         <nav class="header-menu">
             <a class="header-menu-link" href="#">Информация</a>
             <a class="header-menu-link" href="#">Фото и видео</a>
+            <a class="header-logo">
+                <img src="Layer 8.jpg" width="67px" height="56px" alt="Логотип Седона">
+            </a>
             <a class="header-menu-link" href="#">Карта штата</a>
             <a class="header-menu-link" href="hotels.html">Гостиницы</a>
         </nav>
@@ -20,30 +24,30 @@
         <form class="filters">
             <div class="filters-box">
                 <h3 class="filters-box-infrastructure">Инфраструктура</h3>
-                    <div class="filters-box-swimmingpool">
+                    <div class="input-group filters-input-group">
                         <lable for="swimmingpool">Бассейн</lable> 
                         <input type="checkbox" id="swimmingpool" checked>
                     </div>
-                    <div class="filters-box-parking"> 
+                    <div class="input-group"> 
                         <lable for="parking">Парковка</lable> 
                         <input type="checkbox" id="parking">
                     </div>
-                    <div class="filters-box-wifi"> 
+                    <div class="input-group"> 
                         <lable for="Wifi">Wi-Fi</lable> 
                         <input type="checkbox" id="Wifi">
                     </div>
             </div>
             <div class="filters-box">
                 <h3 class="filters-box-home">Тип жилья</h3>
-                <div class="filters-box-hotel">
+                <div class="input-group">
                     <lable for="hotel">Гостиница</lable> 
                     <input type="checkbox" id="hotel" checked>
                 </div>
-                <div class="filters-box-motel">
+                <div class="input-group">
                     <lable for="motel">Мотель</lable> 
                     <input type="checkbox" id="motel" checked>
                 </div>
-                <div class="filters-box-apartment">
+                <div class="input-group">
                     <lable for="apartment">Апартаменты</lable> 
                     <input type="checkbox" id="apartment" checked>
                 </div>
@@ -51,8 +55,8 @@
             <div class="filters-box filters-slider">
                 <h3 class="filters-box-value">Стоимость в сутки (Р)</h3>
                 <div class="filters-slider-range">
-                    <span class="slider-value">от 0</span>
-                    <span class="slider-value">До 3000</span>
+                    <span class="slider-value-from">от 0</span>
+                    <span class="slider-value-to">До 3000</span>
                 </div>
                 <input type="range" min="0" max="4000">
                 <div class="slider">
@@ -69,9 +73,9 @@
                 <h3 class="sorting-heading">Найдено:3</h3>
                 <div class="sorting-target">
                     Сортировка:
-                    <a href="#" name="По цене">По цене</a>
-                    <a href="#" name="По типу">По типу</a>
-                    <a href="#" name="По рейтингу">По рейтингу</a>
+                    <a href="#" class="sorting-target sorting-target-link-active" name="По цене">По цене</a>
+                    <a href="#" class="sorting-target sorting-target-link" name="По типу">По типу</a>
+                    <a href="#" class="sorting-target sorting-target-link" name="По рейтингу">По рейтингу</a>
                 </div>
                 <div class="sorting-order">
                     <a href="#" class="sorting-order-button sorting-order-button-asc">По возрастанию</a>

@@ -7,28 +7,43 @@ body{
     line-height: 1.85;
     font-weight: normal;
     color: #000000;
-    text-align: center;
-
 
     background-color: #ffffff;
 }
 
+header {
+  margin-bottom: 50px;
+  margin: 0;
+  padding: 0;
+}
+
 .header-menu{
+    margin: 0;
+    padding: 0;
     list-style: none;
 }
 
 .header-menu a{
-    color: #000000;
     text-decoration: none;
+    font-weight: bold;
 }
 
+.header-logo{
+    background-image: url("Vector Smart Object.jpg");
+}
+
+.jumbotron{
+    background-image: url("backbround photo.jpg");
+    text-align: center;
+
+
+}
 
 .jumbotron-heading>span:nth-child(1){
 
-}
 
 .jumbotron-heading>span:nth-child(2){
-
+    margin-bottom: 60px;
 }
 
 .jumbotron-heading>span:nth-child(3){
@@ -41,9 +56,12 @@ body{
 
 .main-info-heading{
     font-size: 21px;
-    font-weight: 26px;
+    font-weight: 26px bold;
     text-transform: uppercase;
     color: #000000;
+
+    text-align: center;
+    margin-bottom: 40px;
 }
 
 .main-info-caption{
@@ -51,36 +69,58 @@ body{
     font-weight: 26px;
     text-transform: uppercase;
     color: #333333;
+
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.features{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.features-item {
+    width: 33.3333%;
+}
+
+.features-item-wide {
+    width: 100%;
+}
+
+.features-item-wide-content {
+    width: 33.33%;
+}
+
+.features-item-wide-content-right {
+    float: right;
 }
 
 .feature{
-    font-size: 14px;
-    font-weight: 26px;
-    text-transform: uppercase;
-
+    text-align:center;
+    background-color: #c8c6c3;
+    min-height: 170px;
 }
 
 .feature-display{
-
-
+    width: 100%;
 }
 
-.feature-dark{
-    font-size: 14px;
-    font-weight: 26px;
-    text-transform: uppercase;
-    color: #ffffff;
 
-    background-color: aqua;
-}
+.feature-heading{
+    font-size: 21px;
+    font-weight: 26px bold;
 
-.feature-heading h3{
-    
+   
 }
 
 .feature-number{
     color: #333333;
 
+    
 }
    
 
@@ -93,39 +133,168 @@ body{
     font-weight: 26px;
     text-transform: uppercase;
     color: #000000;
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
 }
 
-.feature-icon{
 
+.feature-light{
+    background-color: #ffffff;
+    width: 400px;
+    /*
+    display: flex;
+    justify-content: space-between;
+    */
+
+
+}
+
+.feature-dark{
+    font-size: 14px;
+    font-weight: 26px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #81b3d2;
+    
+}   
+
+.feature-icon{
+    
 }
 
 .feature-icon-home{
-    image: url("img/home.jpg")
+    background-image: url("icon-1.jpg");
 }
 
 .feature-heading h4{
     font-size: 21px;
+    font-weight: bold;
     color: #000000;
 
+    padding-bottom: 30px;
 }
 
 .feature-description{
-    color: #333333
+    color: #333333;
+
+   
 }
 
+.feature-description{
+ 
+
 .feature-icon-food{
-    image: url("img/food.jpg")
+    background-image: url("icon-2.jpg");
 }
 
 .feature-icon-gifts{
-    image: url("img/gifts.jpg")
-
-}
-
-.feature{
-    background-color: #c8c6c3;
+    background-image: url("icon-3.jpg");
 }
 
 .section-booking{
+    text-align: center;
+}
+
+
+
+h2{
+    font-size: 26px;
+    color:#000000;
+    font-weight: bold;
+    text-transform: uppercase;
     
+
+    
+}
+
+.section-booking-description{
+    font-size: 14px;
+    font-weight: 26px;
+    text-transform: uppercase;
+    
+
+    
+
+}
+
+form{
+    width: 570px;
+    height: 480px;
+
+    text-align: left;    
+}
+
+.form-heading{
+    color:#ffffff;
+    font-size: 21px;
+    font-weight: 26px bold;
+    background-color: #766357;
+    text-transform: uppercase;
+    text-align: center;
+
+   
+}
+
+.form-content{
+    color:#000000;
+    font-size: 14px;
+    font-weight: 26px bold;
+    text-transform: uppercase; 
+}
+
+.form-input-group{
+}
+
+.form-lable{
+
+
+}
+
+.form-input{
+    width: 350px;
+    height: 40px;
+    
+}
+
+.form-input-group-inline{
+
+}
+
+
+
+.footer{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.footer-hashtag{
+    margin-left: 76px;
+    margin-right: 90px;
+    height: 120px;
+    width: 240px;
+}
+
+.social{
+    padding-left: 125px;
+    height: 30px;
+    list-style: none;
+}
+
+.social-tw,
+.social-fb,
+.social-ytb{
+    list-style: none;
+    height: 30px;
+    
+}
+
+.footer-credentials{
+    height: 100px;
 }

@@ -3,15 +3,19 @@
         <head>
             <meta charset="utf-8">
             <title>City of Sedona</title>
+            <link rel="stylesheet" href="css/normalize.css">
+            <link rel="stylesheet" href="css/outline.css">
+            <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+            <link rel="stylesheet" href="index.css">
         </head>
         <body>
             <header class="header">
-                <a class="header-logo">
-                    <img src="img/index-logo.svg" width="" height="" alt="Логотип Седона">
-                </a>
                 <nav class="header-menu">
                     <a class="header-menu-link" href="#">Информация</a>
                     <a class="header-menu-link" href="#">Фото и видео</a>
+                    <a class="header-logo">
+                        <img src="Layer 8.jpg" width="67px" height="56px" alt="Логотип Седона">
+                    </a>
                     <a class="header-menu-link" href="#">Карта штата</a>
                     <a class="header-menu-link" href="hotels.html">Гостиницы</a>
                 </nav>
@@ -21,18 +25,19 @@
                 <cite class="jumbotron-caption">Because the Grand Canyon sucks!</cite>
             </main>
                 <section class="main-info">
-                    <p class="main-info-heading">Седона- небольшой городок в аризоне,заслуживающий большего</p>
+                    <p class="main-info-heading">Седона- небольшой городок в аризоне,<br>заслуживающий большего</p>
                     <p class="main-info-caption">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон</p>
                 </section>
                 <ul class="features">
-                    <li>
-                        <div class="feature-display" style="background-image: url('city-sedona.jpg');">
-                            <div class="feature feature-dark">
-                                <h3 class="feature-heading">Настоящий городок</h3>
-                                <p class="feauture-number">№1</p>
-                                <p class="feature-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
-                            </div>
+                    <li class="features-item features-item-wide">
+                        <div style="background-image: url('Layer 5.jpg')">
+                        <div class="features-item-wide-content feature feature-dark">
+                            <h3 class="feature-heading">Настоящий городок</h3>
+                            <p class="feauture-number">№1</p>
+                            <p class="feature-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
                         </div>
+                        </div>
+
                         <ul class="more-pros">
                             <li class="feature feature-light feature-icon feature-icon-home">
                                 <h4 class="feature-heading">Жилье</h4>
@@ -47,32 +52,36 @@
                                 <p class="feature-description">Не только китайского, но и местного производства!</p>
                         </ul>
                     </li>
-                    <li class="feature-display" style="background-image: url('mountains-sedona.jpg');">
-                        <div class="feature feature-dark">
+
+                    <li class="features-item features-item-wide" style="background-image: url('Layer 5.jpg');">
+                        <div class="features-item-wide-content features-item-wide-content-right feature feature-dark">
                             <h3 class="feature-heading">Там есть мост дьявола</h3>
+
                             <p class="feauture-number">№2</p>
+
                             <p class="feature-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                         </div>
                     </li>
-                    <li class="feature">
+
+                    <li class="features-item feature">
                         <h3 class="feature-heading">Небольшая площадь</h3>
                         <p class="feauture-number">№3</p>
-                        <p class="feature-description">Все достопримечательности находятся очень близко</p>
+                        <p class="feature feature-description">Все достопримечательности находятся очень близко</p>
                     </li>
-                    <li class="feature">
+                    <li class="features-item feature">
                         <h3 class="feature-heading">Красивая дорога</h3>
                         <p class="feauture-number">№4</p>
-                        <p class="feature-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                        <p class=" feature feature-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                     </li>
-                    <li class="feature">
+                    <li class="features-item feature">
                         <h3 class="feature-heading">Мало туристов</h3>
                         <p class="feauture-number">№5</p>
-                        <p class="feature-description">Большинство едет в Гранд Каньон и толпится там</p>
+                        <p class=" feature feature-description">Большинство едет в Гранд Каньон и толпится там</p>
                     </li>
                 </ul>
                 <section class="section-booking">
                     <h2 class="section-booking-heading">Заинтересовались?</h2>
-                    <p class="section-booking-description">Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                    <p class="section-booking-description">Укажите предпологаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
                     <form action="" class="form section-booking-form">
                         <h3 class="form-heading">Поиск гостиницы в Седоне</h3>
                         <div class="form-content">

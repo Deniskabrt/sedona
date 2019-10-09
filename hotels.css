@@ -1,0 +1,263 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans" , Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.85;
+    font-weight: normal;
+    color: #000000;
+
+
+    background-color: #666666;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+}
+
+.header-menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.header-menu a{
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.header-logo{
+    background-image: url ("Vector Smart Object.jpg");
+}
+
+.filters{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+    color:#ffffff;
+    background-image: url("img/backgroundimage.jpg")
+}
+
+.filters-box{
+    
+
+}
+
+.filters-box-infrastructure{
+    width: 240px;
+    height: 220px;
+    font-size: 16px;
+    font-weight: 21px;
+
+    padding-bottom: 30px;
+}
+
+.filters-box-home{
+    width: 290px;
+    height: 220px;
+    font-size: 16px;
+    font-weight: 21px;
+
+    padding-bottom: 30px;
+}
+
+.filters-box-slider{
+    width: 330px;
+    height: 220px;
+    font-size: 16px;
+    font-weight: 21px;
+}
+
+.input-group{
+    font-size: 14px;
+    font-weight: 21px;
+    padding-bottom: 25px;
+
+    color: #ffffff;
+    font-family: "Myriad Pro" , Arial , sans-serif;
+}
+
+.filters-input-group{
+    color: #ffffff;
+}
+
+.filters-slider{
+    color: #ffffff;
+
+}
+
+.slider-value-from{
+    color: #ffffff;
+    border: #ffffff solid 2px;
+}
+
+.slider-value-to{
+    color: #ffffff;
+    border: #ffffff solid 2px;
+}
+
+.slider{
+    color: #ffffff;
+}
+
+.slider-bar{
+    color: #ffffff;
+}
+
+.slider-toggler{
+    color: #ffffff;
+
+}
+
+.slider-button{
+    color: #ffffff;
+    border: #ffffff solid 2px;
+}
+
+.sorting{
+
+}
+
+.sorting-header{
+    font-size: 21px;
+    font-weight: 26px;
+
+    /*Жирный*/
+    font-family: bold;
+}
+
+.sorting-targer{
+    font-size: 12px;
+    font-weight: 18px;
+
+    color: #000000;
+    font-family: "Myriad Pro" , Arial , sans-serif;
+
+}
+
+.sorting-targer-link{
+    color: #000000;
+}
+
+.sorting-targer-link-active{
+    color: #81b3d2;
+
+}
+
+.sorting-order-button{
+
+}
+
+.sorting-order-button-asc{
+    background-image: url("img/asc.jpg")
+    
+}
+
+.sorting-order-button-desc{
+    background-image: url("img/desc.jpg")
+    
+}
+
+.hotels{
+
+}
+
+.hotels-list{
+
+}
+
+.card{
+
+}
+
+.card-image{
+
+}
+
+.card-content{
+
+}
+
+.card-heading h3{
+    font-size: 12px;
+    font-weight: 18px;
+
+    color: #000000;
+
+}
+
+.card-caption>span:nth-child(1){
+    color:#333333;
+
+}
+
+.card-caption>span:nth-child(2){
+    color:#333333;
+}
+
+.card-btn{
+    background-color: #81b3d2;
+
+}
+
+.card-brn-secondary{
+    background-color: #766357;
+}
+
+.card-rating{
+
+}
+
+.card-stars{
+
+}
+
+.card-star{
+    background-image: url("img/star.jpg");
+}
+
+.rating-summery{
+    font-size: 12px;
+    font-weight: 18px;
+
+    background-color: #f2f2f2;
+    color: #666666;
+    font-family: "Myriad Pro" , Arial , sans-serif;
+
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-hashtag{
+    margin-left: 76px;
+    margin-right: 90px;
+    height: 120px;
+    width: 240px;
+}
+
+.social{
+    height: 30px;
+    list-style: none;
+
+}
+
+.social-tw,
+.social-fb,
+.social-ytb{
+    height: 30px;
+    
+}
+
+.footer-credentials{
+    height: 100px;
+}
