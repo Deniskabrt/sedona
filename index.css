@@ -11,52 +11,126 @@ body{
     background-color: #ffffff;
 }
 
-header {
-  margin-bottom: 50px;
-  margin: 0;
-  padding: 0;
+a{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
 }
 
+img{
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+}
+
+.header {
+   
+
+    
+  }
+  
 .header-menu{
     margin: 0;
     padding: 0;
     list-style: none;
-}
+      
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 75px 0 75px;
+  }
+  
+.header-menu-link{
 
-.header-menu a{
+    display: block;
+    padding: 15px 15px;
+
+
     text-decoration: none;
     font-weight: bold;
 }
-
+  
 .header-logo{
-    background-image: url("Vector Smart Object.jpg");
+    position: relative;
+    padding: 0;
+
+    margin-bottom: -16px;
+    
+    
+
+ 
+    
 }
 
-.jumbotron{
-    background-image: url("backbround photo.jpg");
-    text-align: center;
 
+
+
+.jumbotron{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+
+    
+
+    background-image: url("background photo.jpg");
+    background-size: 100%;
+    height: 773px;
+    background-repeat: no-repeat;
+    margin: 0 25px 0 25px;
+    padding-top: 65px;
+
+    text-align: center;
+    
+    
+    
+}
+
+h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
 
 }
 
 .jumbotron-heading>span:nth-child(1){
+    width: 100%;
+
+    display: inline-block;
+
+    font-family: "Myriad Pro Regular" ;
+    text-transform: uppercase;
+    color: #81b3d2;
+    
+    
+
+}
 
 
 .jumbotron-heading>span:nth-child(2){
-    margin-bottom: 60px;
+    width: 100%;
+    display: inline-block;
+    
 }
 
 .jumbotron-heading>span:nth-child(3){
+    width: 100%;
+    display: inline-block;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 50px;
 
 }
 
 .jumbotron-caption{
+    display: inline-block;
+    padding-top: 60px;
 
 }
 
 .main-info-heading{
     font-size: 21px;
-    font-weight: 26px bold;
+    font-weight: bold;
     text-transform: uppercase;
     color: #000000;
 
@@ -83,11 +157,22 @@ header {
     justify-content: space-between;
 }
 
+.features-logo{
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+
 .features-item {
     width: 33.3333%;
 }
 
 .features-item-wide {
+    display: flex;
+    flex-wrap: wrap;
+
     width: 100%;
 }
 
@@ -96,13 +181,13 @@ header {
 }
 
 .features-item-wide-content-right {
-    float: right;
+
 }
 
 .feature{
     text-align:center;
-    background-color: #c8c6c3;
-    min-height: 170px;
+    background-color: #eeeeee;
+    
 }
 
 .feature-display{
@@ -135,6 +220,7 @@ header {
     color: #000000;
     margin: 0;
     padding: 0;
+    width: 100%;
     
     display: flex;
     justify-content: space-between;
@@ -145,10 +231,9 @@ header {
 .feature-light{
     background-color: #ffffff;
     width: 400px;
-    /*
-    display: flex;
-    justify-content: space-between;
-    */
+    
+    
+    
 
 
 }
@@ -163,6 +248,7 @@ header {
 }   
 
 .feature-icon{
+    padding-top: ;
     
 }
 
@@ -184,7 +270,7 @@ header {
    
 }
 
-.feature-description{
+.feature-description{}
  
 
 .feature-icon-food{
@@ -197,6 +283,11 @@ header {
 
 .section-booking{
     text-align: center;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
 }
 
 
@@ -222,20 +313,19 @@ h2{
 }
 
 form{
-    width: 570px;
-    height: 480px;
+    width: 100%;
 
-    text-align: left;    
+     
 }
 
 .form-heading{
     color:#ffffff;
     font-size: 21px;
-    font-weight: 26px bold;
     background-color: #766357;
     text-transform: uppercase;
-    text-align: center;
-
+    width: 50%;
+    justify-content: center;
+    
    
 }
 
@@ -255,46 +345,55 @@ form{
 }
 
 .form-input{
-    width: 350px;
-    height: 40px;
+    
     
 }
 
 .form-input-group-inline{
-
+ 
 }
 
 
 
 .footer{
-    margin: 0;
-    padding: 0;
     display: flex;
-    justify-content: space-between;
-    list-style: none;
+    justify-content: space-around;
+    align-content: center;
+
+    
+
+
 }
 
 .footer-hashtag{
-    margin-left: 76px;
-    margin-right: 90px;
-    height: 120px;
-    width: 240px;
+    width: 33%;
+
+}
+
+.footer-socials{
+    list-style: none;
+    width: 33%;
+
 }
 
 .social{
-    padding-left: 125px;
-    height: 30px;
-    list-style: none;
+    width: 33%;
+
+    /*
+    display: flex;
+    justify-content: center;
+    */
+
 }
 
 .social-tw,
 .social-fb,
 .social-ytb{
-    list-style: none;
-    height: 30px;
     
+   
 }
 
 .footer-credentials{
-    height: 100px;
+    width: 33%;
+    
 }

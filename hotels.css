@@ -12,7 +12,9 @@ body{
     background-color: #666666;
 }
 
-header {
+   
+
+.header {
   margin: 0;
   padding: 0;
 }
@@ -23,7 +25,7 @@ header {
     list-style: none;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: nowrap;
 }
 
@@ -33,52 +35,51 @@ header {
 }
 
 .header-logo{
-    background-image: url ("Vector Smart Object.jpg");
+    background-image: url("Vector Smart Object.jpg");
 }
 
 .filters{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
     display: flex;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 
     color:#ffffff;
     background-image: url("img/backgroundimage.jpg")
 }
 
 .filters-box{
+    width: 33.3333%;
     
-
+    
 }
 
-.filters-box-infrastructure{
-    width: 240px;
-    height: 220px;
-    font-size: 16px;
-    font-weight: 21px;
 
-    padding-bottom: 30px;
+.filters-box-infrastructure{
+    
+    
+    
+    
 }
 
 .filters-box-home{
-    width: 290px;
-    height: 220px;
-    font-size: 16px;
-    font-weight: 21px;
-
-    padding-bottom: 30px;
+   
+   
+   
+    
 }
 
 .filters-box-slider{
-    width: 330px;
-    height: 220px;
-    font-size: 16px;
-    font-weight: 21px;
+    
+   
+    
 }
 
 .input-group{
-    font-size: 14px;
-    font-weight: 21px;
-    padding-bottom: 25px;
+
 
     color: #ffffff;
     font-family: "Myriad Pro" , Arial , sans-serif;
@@ -95,12 +96,12 @@ header {
 
 .slider-value-from{
     color: #ffffff;
-    border: #ffffff solid 2px;
+   
 }
 
 .slider-value-to{
     color: #ffffff;
-    border: #ffffff solid 2px;
+    
 }
 
 .slider{
@@ -118,40 +119,62 @@ header {
 
 .slider-button{
     color: #ffffff;
-    border: #ffffff solid 2px;
+   
+    
 }
 
 .sorting{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
 
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
-.sorting-header{
-    font-size: 21px;
-    font-weight: 26px;
+.sorting-heading{
+    color: #000000;
+    font-family: "Myriad Pro" , Arial , sans-serif;
 
     /*Жирный*/
     font-family: bold;
 }
 
-.sorting-targer{
-    font-size: 12px;
-    font-weight: 18px;
-
+.sorting-target{
     color: #000000;
-    font-family: "Myriad Pro" , Arial , sans-serif;
+    width: 50%;
 
+
+    margin: 0 5px;
+
+
+
+    justify-content: flex-start;
+    
 }
 
-.sorting-targer-link{
-    color: #000000;
+.sorting-target-link{
+    color:#333333;
+    
 }
 
-.sorting-targer-link-active{
+.sorting-target-link-active{
     color: #81b3d2;
 
 }
 
 .sorting-order-button{
+    color:#333333;
+  
+}
+
+.sorting-order-button-active{
+    justify-content: flex-end;
+    
+
+    color: #81b3d2;
 
 }
 
@@ -170,24 +193,35 @@ header {
 }
 
 .hotels-list{
+    list-style: none;
 
 }
 
 .card{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
 
 }
 
-.card-image{
+.card-img{
+    height: 100%;
 
 }
 
 .card-content{
+    display: flex;
+    flex-flow: column wrap;
+    flex-grow: 1;
+    align-content: flex-start;
 
+    
 }
 
-.card-heading h3{
-    font-size: 12px;
-    font-weight: 18px;
+.card-heading {
+    margin: 0;
+    
 
     color: #000000;
 
@@ -207,7 +241,7 @@ header {
 
 }
 
-.card-brn-secondary{
+.card-btn-secondary{
     background-color: #766357;
 }
 
@@ -217,6 +251,7 @@ header {
 
 .card-stars{
 
+
 }
 
 .card-star{
@@ -224,8 +259,6 @@ header {
 }
 
 .rating-summery{
-    font-size: 12px;
-    font-weight: 18px;
 
     background-color: #f2f2f2;
     color: #666666;
@@ -233,31 +266,58 @@ header {
 
 }
 
+/*
+.card-baseline-under{
+    display: flex;
+    align-self: flex-start;
+
+}
+
+.card-baseline-upper{
+    
+
+}
+*/
+
 .footer{
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
+    width: 100%;
+
+    
+
+
 }
 
 .footer-hashtag{
-    margin-left: 76px;
-    margin-right: 90px;
-    height: 120px;
-    width: 240px;
+
+}
+
+.footer-socials{
+    list-style: none;
+    width: 33%;
+
 }
 
 .social{
-    height: 30px;
-    list-style: none;
+    width: 33%;
+
+    /*
+    display: flex;
+    justify-content: center;
+    */
 
 }
 
 .social-tw,
 .social-fb,
 .social-ytb{
-    height: 30px;
     
+   
 }
 
 .footer-credentials{
-    height: 100px;
+    width: 33%;
+    
 }
