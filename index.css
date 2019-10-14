@@ -24,9 +24,7 @@ img{
 }
 
 .header {
-   
-
-    
+ 
   }
   
 .header-menu{
@@ -51,80 +49,109 @@ img{
     font-weight: bold;
 }
   
-.header-logo{
+.header-image{
     position: relative;
     padding: 0;
 
-    margin-bottom: -16px;
-    
-    
-
- 
-    
+    margin-bottom: -16px;   
 }
 
 
 
 
 .jumbotron{
-    margin-top: 0px;
-    margin-bottom: 0px;
-    
-
-    
-
-    background-image: url("background photo.jpg");
-    background-size: 100%;
-    height: 773px;
+    margin: 0;
+    padding: 0;
+    background-image:url("jimbo bottom.png"), url("background.jpg");
+    background-size: 100% ;
+    flex-grow: 1;
     background-repeat: no-repeat;
-    margin: 0 25px 0 25px;
-    padding-top: 65px;
+    background-position:bottom, center;
+    
+    background-repeat: no-repeat;
 
     text-align: center;
-    
-    
-    
 }
 
 h1{
-    margin-top: 0px;
-    margin-bottom: 0px;
+    padding-top: 80px;
+    margin-top: 0;
 
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
 }
 
 .jumbotron-heading>span:nth-child(1){
-    width: 100%;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
 
-    display: inline-block;
+    display:inline-block;
 
-    font-family: "Myriad Pro Regular" ;
-    text-transform: uppercase;
-    color: #81b3d2;
+    margin-bottom: 15px;
+
+
+    background-image: url(Welcome.png);
+    background-repeat: no-repeat;
+    background-position: center;
     
-    
-
+    height: 45px;
+    width: 188px;
 }
 
 
 .jumbotron-heading>span:nth-child(2){
-    width: 100%;
-    display: inline-block;
-    
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    width: 176px;
+    height: 30px;
+    display:inline-block;
+
+    margin-bottom: 55px;
+
+    background-image: url(to\ the\ gorgeous.png);
+    background-repeat: no-repeat;
+    background-position: center;   
 }
 
 .jumbotron-heading>span:nth-child(3){
-    width: 100%;
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    height: 78px;
+    min-width:458px;
     display: inline-block;
-    color: #ffffff;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding-top: 50px;
+
+    margin-bottom: 75px;
+
+    background-image: url(Sedona.png);
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
 
 .jumbotron-caption{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
     display: inline-block;
     padding-top: 60px;
+    margin-bottom: 80px;
+
+    width: 296px;
+    height: 80px;
+
+    background-image: url(Because\ the\ Grand\ \ Canyon\ sucks_.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    text-align: center;
 
 }
 
@@ -135,6 +162,9 @@ h1{
     color: #000000;
 
     text-align: center;
+
+    padding-top: 65px;
+    margin-top: 0;
     margin-bottom: 40px;
 }
 
@@ -157,7 +187,7 @@ h1{
     justify-content: space-between;
 }
 
-.features-logo{
+.features-image{
     flex-grow: 1;
     background-repeat: no-repeat;
     background-size: cover;
@@ -197,19 +227,39 @@ h1{
 
 .feature-heading{
     font-size: 21px;
-    font-weight: 26px bold;
+    line-height: 1;
+    text-transform: uppercase;
 
-   
+    margin-top: 50px;
+    margin-bottom: 0;
+
+    display: inline-block;
+    width: 160px;
+}
+
+h4.feature-heading{
+    margin-top: 90px;
+
+
 }
 
 .feature-number{
     color: #333333;
+
+    margin: 0 30px 0 15px;
 
     
 }
    
 
 .feature-description{
+    margin-bottom: 65px;
+    
+
+    display: inline-block;
+    width: 270px;
+    text-transform: uppercase;
+    
 
 }
 
@@ -221,6 +271,7 @@ h1{
     margin: 0;
     padding: 0;
     width: 100%;
+    margin-top: 60px;
     
     display: flex;
     justify-content: space-between;
@@ -231,16 +282,11 @@ h1{
 .feature-light{
     background-color: #ffffff;
     width: 400px;
-    
-    
-    
-
 
 }
 
 .feature-dark{
-    font-size: 14px;
-    font-weight: 26px;
+    
     text-transform: uppercase;
     color: #ffffff;
     background-color: #81b3d2;
@@ -248,37 +294,28 @@ h1{
 }   
 
 .feature-icon{
-    padding-top: ;
+    background-position-x: center;
     
 }
 
 .feature-icon-home{
-    background-image: url("icon-1.jpg");
+    background-image: url("icon-1.png");
+    background-repeat: no-repeat;
+    
 }
 
-.feature-heading h4{
-    font-size: 21px;
-    font-weight: bold;
-    color: #000000;
 
-    padding-bottom: 30px;
-}
-
-.feature-description{
-    color: #333333;
-
-   
-}
-
-.feature-description{}
- 
 
 .feature-icon-food{
-    background-image: url("icon-2.jpg");
+    background-image: url("icon-2.png");
+    background-repeat: no-repeat;
+    
 }
 
 .feature-icon-gifts{
-    background-image: url("icon-3.jpg");
+    background-image: url("icon-3.png");
+    background-repeat: no-repeat;
+  
 }
 
 .section-booking{
@@ -306,9 +343,6 @@ h2{
     font-size: 14px;
     font-weight: 26px;
     text-transform: uppercase;
-    
-
-    
 
 }
 
@@ -324,7 +358,8 @@ form{
     background-color: #766357;
     text-transform: uppercase;
     width: 50%;
-    justify-content: center;
+    
+    display: inline-block;
     
    
 }
