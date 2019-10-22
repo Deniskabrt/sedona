@@ -8,7 +8,7 @@ body{
     font-weight: normal;
     color: #000000;
 
-
+    width: 1200px;
     
 }
 
@@ -24,8 +24,6 @@ img{
     background-repeat: no-repeat;
 }
 
-.header {
-  }
   
 .header-menu{
     margin: 0;
@@ -40,7 +38,6 @@ img{
   }
   
 .header-menu-link{
-
     display: block;
     padding: 15px 15px;
 
@@ -56,47 +53,41 @@ img{
     margin-bottom: -16px;  
 }
 
+
+
 .filters{
     margin: 0;
     padding: 0;
     list-style: none;
 
     display: flex;
-    justify-content: space-between;
+    
     flex-wrap: wrap;
 
     color:#ffffff;
-    background-image: url("img/backgroundimage.jpg")
+
+    background-image: url(hotelbackground.png);
+    width: 1200px;
+    background-repeat: no-repeat;
+    
+
+    text-transform: uppercase;
+    
 }
 
 .filters-box{
-    width: 33.3333%;
-    
-    
-}
-
-
-.filters-box-infrastructure{
-    
-    
-    
+    margin-left: 90px;
     
 }
 
-.filters-box-home{
-   
-   
-   
-    
-}
 
-.filters-box-slider{
-    
-   
-    
-}
 
 .input-group{
+    font-weight: bold;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
 
 
     color: #ffffff;
@@ -108,6 +99,7 @@ img{
 }
 
 .filters-slider{
+    margin-left: 340px;
     color: #ffffff;
 
 }
@@ -142,8 +134,7 @@ img{
 }
 
 .sorting{
-    margin: 0;
-    padding: 0;
+    margin-left: 90px;
     list-style: none;
     width: 100%;
 
@@ -156,24 +147,22 @@ img{
     color: #000000;
     font-family: "Myriad Pro" , Arial , sans-serif;
 
-    /*Жирный*/
+    
     font-family: bold;
 }
 
 .sorting-target{
     color: #000000;
-    width: 50%;
+    
 
-
-    margin: 0 5px;
-
-
+    
 
     justify-content: flex-start;
     
 }
 
 .sorting-target-link{
+    margin: 0 30px;
     color:#333333;
     
 }
@@ -184,12 +173,17 @@ img{
 }
 
 .sorting-order-button{
+    height: 11px;
+    width: 10px;
+    
+
     color:#333333;
   
 }
 
 .sorting-order-button-active{
-    justify-content: flex-end;
+    height: 11px;
+    width: 10px;
     
 
     color: #81b3d2;
@@ -197,18 +191,36 @@ img{
 }
 
 .sorting-order-button-asc{
-    background-image: url("img/asc.jpg")
+    margin-right: 5px;
+    background-image: url(icon-up-dir.png);
+    background-repeat: no-repeat;
+
+    display: inline-block;
+    height: 11px;
+    width: 10px;
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     
 }
 
 .sorting-order-button-desc{
-    background-image: url("img/desc.jpg")
+    margin-right: 90px;
+    background-image: url(icon-down-dir.png);
+    background-repeat: no-repeat;
+
+    display: inline-block;
+    height: 11px;
+    width: 10px;
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
     
 }
 
-.hotels{
 
-}
 
 .hotels-list{
     list-style: none;
@@ -219,28 +231,26 @@ img{
     display: flex;
     justify-content: space-between;
     width: 100%;
+
+    text-transform: uppercase;
     
 
 }
 
-.card-img{
-    height: 100%;
 
-}
 
 .card-content{
     display: flex;
     flex-flow: column wrap;
     flex-grow: 1;
-    align-content: flex-start;
-
-    
+    justify-content: flex-start;  
 }
+
+
 
 .card-heading {
     margin: 0;
     
-
     color: #000000;
 
 }
@@ -257,58 +267,71 @@ img{
 .card-btn{
     background-color: #81b3d2;
 
+
+    display: inline-block;
+    text-align: center;
+    height: 30px;
+    width: 110px;
+
 }
 
 .card-btn-secondary{
     background-color: #766357;
+
+
+    display: inline-block;
+    text-align: center;
+    height: 30px;
+    width: 140px;
 }
 
-.card-rating{
 
-}
+.rating-star{
+    background-image: url(star.jpg);
+    background-position:left;
+    background-repeat: no-repeat;
 
-.card-stars{
+    display: inline-block;
+    height: 18px;
+    width: 17px;
 
-
-}
-
-.card-star{
-    background-image: url("img/star.jpg");
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+  
 }
 
 .rating-summery{
+    padding:0 10px;
+    margin-right: 90px;
+
+    text-align: center;
 
     background-color: #f2f2f2;
     color: #666666;
-    font-family: "Myriad Pro" , Arial , sans-serif;
-
-}
-
-/*
-.card-baseline-under{
-    display: flex;
-    align-self: flex-start;
-
-}
-
-.card-baseline-upper{
     
+    height: 30px;
+    width: 110px;
 
 }
-*/
 
 .footer{
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    width: 100%;
+    justify-content: space-around;
+    align-content: center;
 
     
-
-
+    height: 120px;
 }
 
 .footer-hashtag{
+    font-size: 21px;
+    font-weight: bold;
+    width: 33%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -316,26 +339,81 @@ img{
     list-style: none;
     width: 33%;
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .social{
-    width: 33%;
-
-    /*
-    display: flex;
-    justify-content: center;
-    */
-
+    margin: 5px;
 }
 
-.social-tw,
-.social-fb,
+.social-tw{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    background-color: #81b3d2;
+
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-image: url(twittericon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.social-fb{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    background-color: #81b3d2;
+
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-image: url(fbicon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
 .social-ytb{
-    
-   
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    background-color: #81b3d2;
+
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-image: url(youtubeIMG.png);
+    background-repeat: no-repeat;
+    background-position: center;  
 }
 
 .footer-credentials{
     width: 33%;
-    
+
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.credentials-caption{
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.credentials-link{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    background-image: url(logo_name.png);
+    height: 41px;
+    width: 115px;
+    background-repeat: no-repeat;
+    background-position: center;
 }

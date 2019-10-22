@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html>
+    <html lang="ru">
         <head>
             <meta charset="utf-8">
             <title>City of Sedona</title>
@@ -14,7 +14,7 @@
                     <a class="header-menu-link" href="#">Информация</a>
                     <a class="header-menu-link" href="#">Фото и видео</a>
                     <a class="header-image" href="index.html">
-                        <img src="logo.png" width="138" height="70">
+                        <img src="photo/logo.png" width="138" height="70">
                     </a>
                     <a class="header-menu-link" href="#">Карта штата</a>
                     <a class="header-menu-link" href="hotels.html">Гостиницы</a>
@@ -36,7 +36,7 @@
                             <p class="feauture-number">№1</p>
                             <p class="feature-description">Седона - не аттракцион для туристов, там течет своя жизнь</p>
                         </div>
-                        <div class="features-image" style="background-image: url('Layer 10.jpg')"></div>
+                        <div class="features-image" style="background-image: url('photo/Layer 10.jpg')"></div>
 
                         <ul class="more-pros">
                             <li class="feature feature-light feature-icon feature-icon-home">
@@ -54,7 +54,7 @@
                     </li>
 
                     <li class="features-item features-item-wide features-image">
-                        <div class="features-image" style="background-image:url('Layer 5.jpg');"></div>
+                        <div class="features-image" style="background-image:url('photo/Layer 5.jpg');"></div>
                         <div class="features-item-wide-content features-item-wide-content-right feature feature-dark">
                             <h3 class="feature-heading">Там есть <br>мост дьявола</h3>
 
@@ -95,14 +95,15 @@
                                 <input type="date" id="booking-departure-date" class="form-input" value="2017-07-04">
                             </div>
                             <div class="form-input-group-inline">
-                                <lable class="form-lable" for="booking-adults">Взрослые:</lable>
-                                <input type="number" class="form-input" id="booking-adults" value="2">
+                                <div class="form-input-group-both">
+                                    <lable class="form-lable form-lable-adults" for="booking-adults">Взрослые:</lable>
+                                    <input type="number" class="form-input form-input-adults" id="booking-adults" value="2">
+                                </div>
+                                <div class="form-input-group-both">
+                                    <lable class="form-lable form-lable-children" for="booking-children">Дети:</lable>
+                                    <input type="number" class="form-input form-input-children" id="booking-children" value="0">
+                                </div>
                             </div>
-                            <div class="form-input-group-inline">
-                                <lable class="form-lable" for="booking-children">Дети:</lable>
-                                <input type="number" class="form-input" id="booking-children" value="0">
-                            </div>
-
                             <button type="submit" class="form-submit section-booking-form-submit">Найти</button>
                         </div>
                     </form>
@@ -120,5 +121,44 @@
                     <a class="credentials-link" href="https://htlmacadamy.ru">HTML Academy</a>
                 </div>
             </footer>
+
+            <script>
+                var link = document.querySelector(".form");
+
+                var form = document.querySelector(".section-booking-form");
+                var arrive = document.querySelector(".booking-arrival-date");
+                var departure = document.querySelector(".booking-departure-date");
+                var adults = document.querySelector(".form-lable-adults");
+                var children = document.querySelector(".form-lable-children");
+
+                var isStorageSupport = true;
+                var storage ="";
+
+                try{
+                    storage = localStorage.getItem("date-arrive", arrive.value); 
+                    localStorage.getItem("date-departure", departure.value);
+                    localStorage.getItem("adults", adults.value);
+                    localStorage.getItem("children", children.value);
+                } catch (err) {
+                    isStorageSupport = folse;
+                }
+
+                form.addEventListener("submit", function (evt){
+                    if(!arrive.value || !departure.value || !adults.value || !children.value){
+                    evt.preventDefault();
+                    console.log("Необходимо ввести дату поезки и колличество людей");
+                    } 
+                    else {
+                        if (isStorageSupport) {
+                    localStorage.setItem("date-arrive", arrive.value); 
+                    localStorage.setItem("date-departure", departure.value);
+                    localStorage.setItem("adults", adults.value);
+                    localStorage.setItem("children", children.value);
+                        }
+                    }
+                });
+
+            </script>
+
         </body>
     </html>
