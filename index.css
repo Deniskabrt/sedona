@@ -101,7 +101,7 @@ h1{
     white-space: nowrap;
     overflow: hidden;
 
-    width: 176px;
+    width: 256px;
     height: 30px;
     display:inline-block;
 
@@ -377,20 +377,20 @@ form{
     background-color: #ffffff;
 
     margin: 0 auto;
-    padding: 60px;
+    padding:55px 60px;
 
     box-sizing: border-box;
     
 }
 
 .form-input-group{
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 
     display: flex;
+    align-items: center;
 }
 
 .form-lable{
-    padding-right: 10px;
     text-align: left;
     min-width: 125px;
 }
@@ -400,39 +400,51 @@ form{
 
     background-color: #f2f2f2;
     border: none;
+    text-transform: uppercase;
+    font-weight: bold;
 
-    margin-bottom: 25px;
+    height: 40px;
+
+    padding: 0 5px;
 }
 
 .form-input-group-inline{
     display: flex;
     justify-content: space-between;
+
+    margin-bottom: 60px;
 }
 
 .form-input-group-both{
-    width: auto;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
 }
 
 .form-lable-adults{
-    padding-right: 10px;
+    display: inline-block;
     text-align: left;
     min-width: 125px;
 }
 
 .form-input-adults{
-    width: 125px;
     box-sizing: border-box;
+
+    height: 40px;
+    width: 40px;
 }
 
 .form-lable-children{
     padding-right: 10px;
     text-align: right;
+    min-width: 0;
+
 }
 
 .form-input-children{
-    width: 115px;
+    width: 40px;
 
-    margin-bottom: 70px;
+    
 }
 
 .form-submit{
@@ -444,6 +456,49 @@ form{
     box-sizing: border-box;
     height: 45px;
     border:none;
+}
+
+.form-input-group-both-plus-minus{
+    display: flex;
+
+    background-color: #f2f2f2;
+
+    box-sizing: border-box;
+    height: 40px;
+    width: 115px;
+}
+
+.button-minus{
+    background-image: url(photo/minus.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    border: none;
+    height: 40px;
+    width: 40px;
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    padding: 0;
+}
+
+.button-plus{
+    background-image: url(photo/plus.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+
+    border: none;
+    height: 40px;
+    width: 40px;
+    
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    padding: 0;
 }
 
 

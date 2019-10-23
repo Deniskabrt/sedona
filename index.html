@@ -88,20 +88,28 @@
                         <div class="form-content">
                             <div class="form-input-group">
                                 <lable class="form-lable" for="booking-arrival-date">Дата заезда:</lable>
-                                <input type="date" id="booking-arrival-date" class="form-input" value="2017-04-24">
+                                <input type="text" id="booking-arrival-date" class="form-input" value="24 АПРЕЛЯ 2017 ">
                             </div>
                             <div class="form-input-group">
                                 <lable class="form-lable" for="booking-departure-date">Дата выезда:</lable>
-                                <input type="date" id="booking-departure-date" class="form-input" value="2017-07-04">
+                                <input type="text" id="booking-departure-date" class="form-input" value="04 ИЮЛЯ 2017">
                             </div>
                             <div class="form-input-group-inline">
                                 <div class="form-input-group-both">
                                     <lable class="form-lable form-lable-adults" for="booking-adults">Взрослые:</lable>
-                                    <input type="number" class="form-input form-input-adults" id="booking-adults" value="2">
+                                    <div class="form-input-group-both-plus-minus">
+                                        <button type="button" class="button button-minus"></button>
+                                        <input type="text" class="form-input form-input-adults" id="booking-adults" value="2">
+                                        <button type="button" class="button button-plus"></button>
+                                    </div>
                                 </div>
                                 <div class="form-input-group-both">
                                     <lable class="form-lable form-lable-children" for="booking-children">Дети:</lable>
-                                    <input type="number" class="form-input form-input-children" id="booking-children" value="0">
+                                    <div class="form-input-group-both-plus-minus">
+                                        <button type="button" class="button button-minus"></button>
+                                        <input type="text" class="form-input form-input-children" id="booking-children" value="0">
+                                        <button type="button" class="button button-plus"></button>
+                                    </div>
                                 </div>
                             </div>
                             <button type="submit" class="form-submit section-booking-form-submit">Найти</button>
@@ -140,7 +148,7 @@
                     localStorage.getItem("adults", adults.value);
                     localStorage.getItem("children", children.value);
                 } catch (err) {
-                    isStorageSupport = folse;
+                    isStorageSupport = false;
                 }
 
                 form.addEventListener("submit", function (evt){
