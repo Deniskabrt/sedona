@@ -1,0 +1,456 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans" , Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.85;
+    font-weight: normal;
+    color: #000000;
+
+    width: 1200px;
+    
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+}
+
+  
+.header-menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+      
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 75px 0 75px;
+  }
+  
+.header-menu-link{
+    display: block;
+    padding: 15px 15px;
+
+
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+.header-image{
+    position: relative;
+    padding: 0;
+
+    margin-bottom: -16px;  
+}
+
+
+
+.filters{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    
+    flex-wrap: wrap;
+
+    color:#ffffff;
+
+    background-image: url(photo/hotelbackground.png);
+    width: 1200px;
+    background-repeat: no-repeat;
+    
+
+    text-transform: uppercase;
+
+    border-bottom: 1px solid #f2f2f2;
+    
+}
+
+.filters-box{
+    margin-left: 90px;
+    
+}
+
+
+
+.input-group{
+    font-weight: bold;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+
+
+    color: #ffffff;
+    font-family: "Myriad Pro" , Arial , sans-serif;
+}
+
+.filters-input-group{
+    color: #ffffff;
+}
+
+.filters-slider{
+    margin-left: 340px;
+    color: #ffffff;
+
+}
+
+.slider-value-from{
+    color: #ffffff;
+   
+}
+
+.slider-value-to{
+    color: #ffffff;
+    
+}
+
+.slider{
+    color: #ffffff;
+}
+
+.slider-bar{
+    color: #ffffff;
+}
+
+.slider-toggler{
+    color: #ffffff;
+
+}
+
+.slider-button{
+    color: #ffffff;
+   
+    
+}
+
+.sorting{
+    padding-left: 90px;
+    list-style: none;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+
+    background-color: #ffffff;
+}
+
+.sorting-heading{
+    color: #000000;
+    font-family: "Myriad Pro" , Arial , sans-serif;
+
+    min-width:165px;
+
+    
+    font-family: bold;
+}
+
+.sorting-target{
+    color: #000000;
+    justify-content: flex-start;
+    
+}
+
+.sorting-target-link{
+    margin: 0 30px;
+    color:#333333;
+    
+}
+
+.sorting-target-link-active{
+    color: #81b3d2;
+
+}
+
+.sorting-order-button{
+    height: 11px;
+    width: 10px;
+    
+
+    color:#333333;
+  
+}
+
+.sorting-order-button-active{
+    height: 11px;
+    width: 10px;
+    
+
+    color: #81b3d2;
+
+}
+
+.sorting-order-button-asc{
+    margin-right: 5px;
+    background-image: url(photo/icon-up-dir.png);
+    background-repeat: no-repeat;
+
+    display: inline-block;
+    height: 11px;
+    width: 10px;
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+
+.sorting-order-button-desc{
+    margin-right: 90px;
+    background-image: url(photo/icon-down-dir.png);
+    background-repeat: no-repeat;
+
+    display: inline-block;
+    height: 11px;
+    width: 10px;
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    
+}
+
+.hotels{
+    margin: 0 90px;
+    
+}
+
+.hotels-list{
+    list-style: none;
+    padding: 0;
+
+}
+
+.card{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    text-transform: uppercase;
+    
+    max-height: 90px;
+    padding: 30px 0;
+
+}
+
+.card-img{
+    padding-right: 30px;
+}
+
+
+.card-content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;  
+}
+
+
+
+.card-heading {
+    margin: 0;
+    
+    color: #000000;
+}
+
+.card-caption{
+    margin: 0;
+}
+
+.card-caption>span:nth-child(1){
+    color:#333333;
+    display: inline-block;
+    min-width: 120px;
+
+
+}
+
+.card-caption>span:nth-child(2){
+    color:#333333;
+
+    margin: 0;
+}
+
+.card-btn-first{
+    background-color: #81b3d2;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    border: none;
+
+    height: 30px;
+    width: 110px;
+
+    
+
+}
+
+.card-btn-secondary{
+    background-color: #766357;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+
+    border: none;
+
+    margin-left: 5px;
+
+   
+    height: 30px;
+    width: 140px;
+}
+
+
+.card-rating{
+    text-align: right;
+}
+
+.rating-star{
+    background-image: url(photo/star.jpg);
+    background-position:right;
+    background-repeat: no-repeat;
+
+    display: inline-block;
+    text-align: center;
+    height: 18px;
+    width: 17px;
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    
+  
+}
+
+.rating-summery{
+    padding:0 10px;
+    
+
+    
+
+    text-align: center;
+
+    background-color: #f2f2f2;
+    color: #666666;
+    
+    height: 30px;
+    width: 110px;
+
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+
+    
+    height: 120px;
+
+    border-top:1px solid #f2f2f2;
+}
+
+.footer-hashtag{
+    font-size: 21px;
+    font-weight: bold;
+    width: 33%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-socials{
+    list-style: none;
+    width: 33%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social{
+    margin: 5px;
+}
+
+.social-tw{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    background-color: #81b3d2;
+
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-image: url(photo/twittericon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.social-fb{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    background-color: #81b3d2;
+
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-image: url(photo/fbicon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.social-ytb{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    background-color: #81b3d2;
+
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-image: url(photo/youtubeIMG.png);
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+.footer-credentials{
+    width: 33%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.credentials-caption{
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.credentials-link{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    background-image: url(photo/logo_name.png);
+    height: 41px;
+    width: 115px;
+    background-repeat: no-repeat;
+    background-position: center;
+}

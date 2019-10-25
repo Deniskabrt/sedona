@@ -1,0 +1,607 @@
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans" , Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.85;
+    font-weight: normal;
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+}
+
+.header-menu{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+      
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 75px 0 75px;
+  }
+  
+.header-menu-link{
+
+    display: block;
+    padding: 15px 15px;
+
+
+    text-decoration: none;
+    font-weight: bold;
+}
+  
+.header-image{
+    position: relative;
+    padding: 0;
+
+    margin-bottom: -16px;   
+}
+
+
+
+
+.jumbotron{
+    margin: 0;
+    padding: 0;
+    background-image:url(photo/jimbo\ bottom.png), url(photo/background.jpg);
+    background-size: 100% ;
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    background-position:bottom, center;
+
+    text-align: center;
+}
+
+h1{
+    padding-top: 40px;
+    margin-top: 0;
+
+
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+.jumbotron-heading>span:nth-child(1){
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    display:inline-block;
+
+    margin-bottom: 15px;
+
+
+    background-image: url(photo/Welcome.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    height: 45px;
+    width: 188px;
+}
+
+
+.jumbotron-heading>span:nth-child(2){
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    width: 256px;
+    height: 30px;
+    display:inline-block;
+
+    margin-bottom: 55px;
+
+    background-image: url(photo/to\ the\ gorgeous.png);
+    background-repeat: no-repeat;
+    background-position: center;   
+}
+
+.jumbotron-heading>span:nth-child(3){
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    height: 78px;
+    min-width:458px;
+    display: inline-block;
+
+    margin-bottom: 75px;
+
+    background-image: url(photo/Sedona.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.jumbotron-caption{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    display: inline-block;
+    padding-top: 60px;
+    margin-bottom: 80px;
+
+    width: 296px;
+    height: 80px;
+
+    background-image: url(photo/Because\ the\ Grand\ \ Canyon\ sucks_.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    text-align: center;
+
+}
+
+.main-info-heading{
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+
+    text-align: center;
+
+    padding-top: 65px;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.main-info-caption{
+    font-size: 14px;
+    font-weight: 26px;
+    text-transform: uppercase;
+    color: #333333;
+
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.features{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.features-image{
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+.features-item {
+    width: 33.3333%;
+}
+
+.features-item-wide {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+}
+
+.features-item-wide-content {
+    width: 33.33%;
+}
+
+
+.feature{
+    text-align:center;
+    background-color: #eeeeee;
+    
+}
+
+.feature-display{
+    width: 100%;
+}
+
+
+.feature-heading{
+    font-size: 21px;
+    line-height: 1;
+    text-transform: uppercase;
+
+    margin-top: 50px;
+    margin-bottom: 0;
+
+    display: inline-block;
+    width: 160px;
+}
+
+h4.feature-heading{
+    margin-top: 90px;
+
+
+}
+
+.feature-number{
+    color: #333333;
+
+    margin: 0 30px 0 15px;
+
+    
+}
+   
+
+.feature-description{
+    margin-bottom: 65px;
+    
+
+    display: inline-block;
+    width: 270px;
+    text-transform: uppercase;
+    
+
+}
+
+.more-pros{
+    font-size: 14px;
+    font-weight: 26px;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-top: 60px;
+    
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+
+.feature-light{
+    background-color: #ffffff;
+    width: 400px;
+
+}
+
+.feature-dark{
+    
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #81b3d2;
+    
+}   
+
+.feature-icon{
+    background-position-x: center;
+    
+}
+
+.feature-icon-home{
+    background-image: url("photo/icon-1.png");
+    background-repeat: no-repeat;
+    
+}
+
+
+
+.feature-icon-food{
+    background-image: url("photo/icon-2.png");
+    background-repeat: no-repeat;
+    
+}
+
+.feature-icon-gifts{
+    background-image: url("photo/icon-3.png");
+    background-repeat: no-repeat;
+}
+
+.section-booking{
+    text-align: center;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+
+
+h2{
+    font-size: 26px;
+    color:#000000;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    margin: 0;
+    padding-top: 40px;
+    
+
+    
+}
+
+.section-booking-description{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+form{
+    width: 100%;
+
+    background-image: url(photo/map.png);
+    background-repeat: no-repeat;
+    background-position: 0 110px;
+    background-size: 100%;
+
+    padding: 0 calc(50vw - 301px) 75px; 
+    box-sizing: border-box;
+    
+}
+
+.form-heading{
+    color:#ffffff;
+    font-size: 21px;
+    background-color: #766357;
+    text-transform: uppercase;
+    
+
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 0px;
+
+}
+
+.form-content{
+    color:#000000;
+    font-size: 14px;
+    font-weight:bold;
+    text-transform: uppercase; 
+
+    height: 400px;
+    
+    display: flex;
+    flex-flow: column nowrap;
+
+    background-color: #ffffff;
+
+    margin: 0 auto;
+    padding:55px 60px;
+
+    box-sizing: border-box;
+    
+}
+
+.form-input-group{
+    margin-bottom: 25px;
+
+    display: flex;
+    align-items: center;
+}
+
+.form-lable{
+    text-align: left;
+    min-width: 125px;
+}
+
+.form-input{
+    flex-grow: 1;
+
+    background-color: #f2f2f2;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    height: 40px;
+
+    padding: 0 5px;
+}
+
+.form-input-group-inline{
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 60px;
+}
+
+.form-input-group-both{
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.form-lable-adults{
+    display: inline-block;
+    text-align: left;
+    min-width: 125px;
+}
+
+.form-input-adults{
+    box-sizing: border-box;
+
+    height: 40px;
+    width: 40px;
+}
+
+.form-lable-children{
+    padding-right: 10px;
+    text-align: right;
+    min-width: 0;
+
+}
+
+.form-input-children{
+    width: 40px;
+
+    
+}
+
+.form-submit{
+    color:#ffffff;
+    font-size: 21px;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #81b3d2;
+    box-sizing: border-box;
+    height: 45px;
+    border:none;
+}
+
+.form-input-group-both-plus-minus{
+    display: flex;
+
+    background-color: #f2f2f2;
+
+    box-sizing: border-box;
+    height: 40px;
+    width: 115px;
+}
+
+.button-minus{
+    background-image: url(photo/minus.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    border: none;
+    height: 40px;
+    width: 40px;
+
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    padding: 0;
+}
+
+.button-plus{
+    background-image: url(photo/plus.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+
+    border: none;
+    height: 40px;
+    width: 40px;
+    
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    padding: 0;
+}
+
+
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+
+    
+    height: 120px;
+}
+
+.footer-hashtag{
+    font-size: 21px;
+    font-weight: bold;
+    width: 33%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer-socials{
+    list-style: none;
+    width: 33%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social{
+    margin: 5px;
+}
+
+.social-tw{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    background-color: #81b3d2;
+
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-image: url(photo/twittericon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.social-fb{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    background-color: #81b3d2;
+
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-image: url(photo/fbicon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.social-ytb{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    background-color: #81b3d2;
+
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background-image: url(photo/youtubeIMG.png);
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+
+.footer-credentials{
+    width: 33%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+
+.credentials-caption{
+    text-transform: uppercase;
+    margin-right: 10px;
+}
+
+.credentials-link{
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+
+    background-image: url(photo/logo_name.png);
+    height: 41px;
+    width: 115px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
