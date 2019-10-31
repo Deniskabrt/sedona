@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Hotels</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/outline.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="outline.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="hotels.css" type="text/css">
 </head>
@@ -20,60 +20,62 @@
             <a class="header-menu-link" href="hotels.html">Гостиницы</a>
         </nav>
     </header>
-    <main class="contain">
+    <main class="container">
         <form class="filters">
-            <div class="filters-box">
-                <h3 class="filters-box-infrastructure">Инфраструктура</h3>
-                    <div class="input-group filters-input-group">
-                        <lable for="swimmingpool">Бассейн</lable> 
-                        <input type="checkbox" id="swimmingpool" checked>
+            <section class="filters-background">
+                <div class="filters-box">
+                    <h3 class="filters-box-infrastructure">Инфраструктура</h3>
+                        <div class="input-group filters-input-group">
+                            <input type="checkbox" id="swimmingpool" checked>
+                            <label for="swimmingpool">Бассейн</lable> 
+                        </div>
+                        <div class="input-group"> 
+                            <input type="checkbox" id="parking">
+                            <label for="parking">Парковка</lable> 
+                        </div>
+                        <div class="input-group"> 
+                            <input type="checkbox" id="Wifi">
+                            <label for="Wifi">Wi-Fi</lable> 
+                        </div>
+                </div>
+                <div class="filters-box">
+                    <h3 class="filters-box-home">Тип жилья</h3>
+                    <div class="input-group">
+                        <input type="checkbox" id="hotel" checked>
+                        <label for="hotel">Гостиница</lable> 
                     </div>
-                    <div class="input-group"> 
-                        <lable for="parking">Парковка</lable> 
-                        <input type="checkbox" id="parking">
+                    <div class="input-group">
+                        <input type="checkbox" id="motel" checked>
+                        <label for="motel">Мотель</lable> 
                     </div>
-                    <div class="input-group"> 
-                        <lable for="Wifi">Wi-Fi</lable> 
-                        <input type="checkbox" id="Wifi">
-                    </div>
-            </div>
-            <div class="filters-box">
-                <h3 class="filters-box-home">Тип жилья</h3>
-                <div class="input-group">
-                    <lable for="hotel">Гостиница</lable> 
-                    <input type="checkbox" id="hotel" checked>
-                </div>
-                <div class="input-group">
-                    <lable for="motel">Мотель</lable> 
-                    <input type="checkbox" id="motel" checked>
-                </div>
-                <div class="input-group">
-                    <lable for="apartment">Апартаменты</lable> 
-                    <input type="checkbox" id="apartment" checked>
-                </div>
-            </div>
-            <div class="filters-box filters-slider">
-                <h3 class="filters-box-value">Стоимость в сутки (Р):</h3>
-                <div class="filters-slider-range">
-                    <span class="slider-value-from">от 0</span>
-                    <span class="slider-value-to">До 3000</span>
-                </div>
-                <input type="range" min="0" max="4000">
-                <div class="slider">
-                    <div class="slider-bar">
-                        <span class="slider-toggler"></span>
-                        <span class="slider-toggler"></span>
+                    <div class="input-group">
+                        <input type="checkbox" id="apartment" checked>
+                        <label for="apartment">Апартаменты</lable> 
                     </div>
                 </div>
-                <div class="slider-button">
-                    <input id="button-box" type="submit" value="Показать">
+                <div class="filters-box filters-slider">
+                    <h3 class="filters-box-value">Стоимость в сутки (Р):</h3>
+                    <div class="filters-slider-range">
+                        <span class="slider-value-from">от 0</span>
+                        <span class="slider-value-to">До 3000</span>
+                    </div>
+                    <input type="range" min="0" max="4000">
+                    <div class="slider">
+                        <div class="slider-bar">
+                            <span class="slider-toggler"></span>
+                            <span class="slider-toggler"></span>
+                        </div>
+                    </div>
+                    <div class="slider-button">
+                        <input id="button-box" type="submit" value="Показать">
+                    </div>
                 </div>
-            </div>
+            </section>
             <div class="sorting">
                 <h3 class="sorting-heading">Найдено:3</h3>
                 <div class="sorting-target">
                     Сортировка:
-                    <a href="#" class="sorting-target sorting-target-link-active" name="По цене">По цене</a>
+                    <a href="#" class="sorting-target sorting-target-link sorting-target-link-active" name="По цене">По цене</a>
                     <a href="#" class="sorting-target sorting-target-link" name="По типу">По типу</a>
                     <a href="#" class="sorting-target sorting-target-link" name="По рейтингу">По рейтингу</a>
                 </div>
@@ -159,7 +161,7 @@
                 </li>
             </ul>
         </section>
-    </main>
+    
     <footer class="footer">
         <p class="footer-hashtag hashtag">#VISITSEDONA</p>
         <ul class="footer-socials">

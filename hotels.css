@@ -20,7 +20,6 @@ a{
 
 img{
     max-width: 100%;
-    height: auto;
     background-repeat: no-repeat;
 }
 
@@ -53,6 +52,10 @@ img{
     margin-bottom: -16px;  
 }
 
+.container{
+    
+}
+
 
 
 .filters{
@@ -60,16 +63,10 @@ img{
     padding: 0;
     list-style: none;
 
-    display: flex;
     
-    flex-wrap: wrap;
 
     color:#ffffff;
 
-    background-image: url(photo/hotelbackground.png);
-    width: 1200px;
-    background-repeat: no-repeat;
-    
 
     text-transform: uppercase;
 
@@ -77,10 +74,29 @@ img{
     
 }
 
-.filters-box{
-    margin-left: 90px;
-    
+.filters-background{
+    display: flex;
+    flex-wrap: wrap;
+
+    background-image: url(photo/hotelbackground.png);
+    width: auto;
+    background-repeat: no-repeat;
 }
+
+.filters-box{
+    margin-left: 90px; 
+
+}
+
+
+.filters-box-infrastructure{
+    margin-bottom: 0;
+}
+
+.filters-box-home{
+    margin-bottom: 0;
+}
+
 
 
 
@@ -88,8 +104,8 @@ img{
     font-weight: bold;
     padding: 10px 0;
     display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: flex-start;
 
 
     color: #ffffff;
@@ -138,10 +154,10 @@ img{
 .sorting{
     padding-left: 90px;
     list-style: none;
-    width: 100%;
+    
 
     display: flex;
-    justify-content: space-between;
+    
     align-items: baseline;
 
     background-color: #ffffff;
@@ -164,14 +180,21 @@ img{
 }
 
 .sorting-target-link{
-    margin: 0 30px;
-    color:#333333;
+    margin: 0;
+    margin-left: 35px;
+    color:#b1b1b1;
+
+    font-family:"Myriad Pro" , Arial , sans-serif;
     
 }
 
 .sorting-target-link-active{
     color: #81b3d2;
 
+}
+
+.sorting-order{
+  
 }
 
 .sorting-order-button{
@@ -208,7 +231,6 @@ img{
 }
 
 .sorting-order-button-desc{
-    margin-right: 90px;
     background-image: url(photo/icon-down-dir.png);
     background-repeat: no-repeat;
 
@@ -260,12 +282,14 @@ img{
 
 .card-heading {
     margin: 0;
+    margin-top: -7px;
     
     color: #000000;
 }
 
 .card-caption{
     margin: 0;
+    padding: 5px 0;
 }
 
 .card-caption>span:nth-child(1){
@@ -348,6 +372,7 @@ img{
     height: 30px;
     width: 110px;
 
+    margin-top: 33px;
 }
 
 .footer{
