@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Hotels</title>
+    <title>HTML Academy:Седона</title>
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="outline.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
@@ -16,7 +16,7 @@
             <a class="header-image" href="index.html">
                 <img src="photo/logo.png" width="138" height="70">
             </a>
-            <a class="header-menu-link" href="#">Карта штата</a>
+            <a class="header-menu-link" href="#">Карта  штата</a>
             <a class="header-menu-link" href="hotels.html">Гостиницы</a>
         </nav>
     </header>
@@ -24,55 +24,57 @@
         <form class="filters">
             <section class="filters-background">
                 <div class="filters-box">
-                    <h3 class="filters-box-infrastructure">Инфраструктура</h3>
+                    <h3 class="filters-box-infrastructure">Инфраструктура:</h3>
                         <div class="input-group filters-input-group">
-                            <input type="checkbox" id="swimmingpool" checked>
-                            <label for="swimmingpool">Бассейн</lable> 
+                            <input class="input-checkbox" type="checkbox" id="swimmingpool" checked>
+                            <label class="label-checkbox" for="swimmingpool">Бассейн</lable> 
                         </div>
-                        <div class="input-group"> 
-                            <input type="checkbox" id="parking">
-                            <label for="parking">Парковка</lable> 
+                        <div class="input-group filters-input-group"> 
+                            <input class="input-checkbox" type="checkbox" id="parking" >
+                            <label class="label-checkbox" for="parking">Парковка</lable> 
                         </div>
-                        <div class="input-group"> 
-                            <input type="checkbox" id="Wifi">
-                            <label for="Wifi">Wi-Fi</lable> 
+                        <div class="input-group filters-input-group"> 
+                            <input class="input-checkbox" type="checkbox" id="Wifi" >
+                            <label class="label-checkbox" for="Wifi">Wi-Fi</lable> 
                         </div>
                 </div>
                 <div class="filters-box">
-                    <h3 class="filters-box-home">Тип жилья</h3>
-                    <div class="input-group">
-                        <input type="checkbox" id="hotel" checked>
-                        <label for="hotel">Гостиница</lable> 
+                    <h3 class="filters-box-home">Тип жилья:</h3>
+                    <div class="input-group filters-input-group">
+                        <input class="input-checkbox" type="checkbox" id="hotel" checked >
+                        <label class="label-checkbox" for="hotel">Гостиница</lable> 
                     </div>
-                    <div class="input-group">
-                        <input type="checkbox" id="motel" checked>
-                        <label for="motel">Мотель</lable> 
+                    <div class="input-group filters-input-group">
+                        <input class="input-checkbox" type="checkbox" id="motel" checked >
+                        <label class="label-checkbox" for="motel">Мотель</lable> 
                     </div>
-                    <div class="input-group">
-                        <input type="checkbox" id="apartment" checked>
-                        <label for="apartment">Апартаменты</lable> 
+                    <div class="input-group filters-input-group">
+                        <input class="input-checkbox" type="checkbox" id="apartment" checked >
+                        <label class="label-checkbox" for="apartment">Апартаменты</lable> 
                     </div>
                 </div>
-                <div class="filters-box filters-slider">
-                    <h3 class="filters-box-value">Стоимость в сутки (Р):</h3>
-                    <div class="filters-slider-range">
-                        <span class="slider-value-from">от 0</span>
-                        <span class="slider-value-to">До 3000</span>
-                    </div>
-                    <input type="range" min="0" max="4000">
-                    <div class="slider">
-                        <div class="slider-bar">
-                            <span class="slider-toggler"></span>
-                            <span class="slider-toggler"></span>
+                <div class="filter-range">
+                    <div class="filter-range-title">Стоимость в сутки (р):</div>
+                    <div class="price-controls">
+                        <label  class="min-price">от
+                            <input type="text" name="min-price" value="0">
+                        </label> 
+                        <label  class="max-price">до
+                            <input type="text" name="max-price" value="3000">
+                        </label>
+                    </div>     
+                    <div class="range-controls">
+                        <div class="scale">
+                            <div class="bar"></div>
                         </div>
+                        <div class="range-toggle range-toggle-min"></div>
+                        <div class="range-toggle range-toggle-max"></div>
                     </div>
-                    <div class="slider-button">
-                        <input id="button-box" type="submit" value="Показать">
-                    </div>
+                    <button class="btn-show" type="submit">Показать</button>
                 </div>
             </section>
             <div class="sorting">
-                <h3 class="sorting-heading">Найдено:3</h3>
+                <h3 class="sorting-heading">Найдено: 3</h3>
                 <div class="sorting-target">
                     Сортировка:
                     <a href="#" class="sorting-target sorting-target-link sorting-target-link-active" name="По цене">По цене</a>
@@ -89,7 +91,7 @@
             <ul class="hotels-list">
                 <li class="card">
                     <div class="card-content">
-                        <img src="photo/hotel.png"  class="card-img" alt="Image" width="135"   height="90">
+                        <img src="photo/motel.png"  class="card-img" alt="Image" width="135"   height="90">
                         <h3 class="card-heading ">Amara Resort & SPA</h3>
                         <p class="card-caption">
                             <span>Гостиница</span>
@@ -114,7 +116,7 @@
                 </li>
                 <li class="card">
                     <div class="card-content">
-                        <img src="photo/motel.png" class="card-img" alt="Image" width="135"  height="90">
+                        <img src="photo/aps.png" class="card-img" alt="Image" width="135"  height="90">
                         <h3 class="card-heading ">Desert Quail Inn</h3>
                         <p class="card-caption">
                             <span>Мотель</span>
@@ -138,7 +140,7 @@
                 </li>
                 <li class="card">
                     <div class="card-content">
-                        <img src="photo/aps.png" class="card-img" alt="Image" width="135"  height="90">
+                        <img src="photo/hotel.png" class="card-img" alt="Image" width="135"  height="90">
                         <h3 class="card-heading">Villas at Poco Diablo</h3>
                         <p class="card-caption">
                             <span>Апартаменты</span>
